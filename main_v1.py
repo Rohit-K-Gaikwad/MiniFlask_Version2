@@ -18,13 +18,6 @@ def card_view(index):
     try:
         card = db[index]
 
-        return render_template(
-            "card.html",
-            card=card,
-            index=index
-        )
+        return render_template("card.html", card=card, index=index)
     except IndexError:
         abort(404)
-
-
-

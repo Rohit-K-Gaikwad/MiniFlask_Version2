@@ -7,6 +7,12 @@ app = Flask(__name__)
 
 @app.route("/")
 def welcome():
+    """
+    This is welcome API endpoint
+
+    :return:
+    """
+
     return render_template(
         "welcome.html",
         message="Here's message from the view",
@@ -18,11 +24,7 @@ def card_view(index):
     try:
         card = db[index]
 
-        return render_template(
-            "card.html",
-            card=card,
-            index=index
-        )
+        return render_template("card.html", card=card, index=index)
     except IndexError:
         abort(404)
 
