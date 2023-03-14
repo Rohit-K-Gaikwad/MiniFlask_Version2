@@ -1,7 +1,7 @@
 ## code-linting
 
 - black (To adhere to pep8 standards)
-
+https://black.readthedocs.io/en/stable/
 
 
 ## 2 types of code analysis
