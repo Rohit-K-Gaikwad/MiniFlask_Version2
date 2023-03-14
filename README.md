@@ -23,3 +23,11 @@ miniflask_v2  (project root)
 ├── venv
 
 ```
+
+### URLs you need to try -
+
+- `<home-url>/`
+- `<home-url>/card/0`
+- `<home-url>/card/1`
+- `<home-url>/card/2`
+- `<home-url>/card/3`
