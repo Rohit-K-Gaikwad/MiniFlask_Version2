@@ -7,10 +7,10 @@ from sqlalchemy import create_engine
 
 
 host = "127.0.0.1"
-user = "root"
+user = "rohit"
 port = 3306
 database = "starwarsDB"
-password = "Rohit@123"
+password = "rohit123456"
 
 
 def get_connection():
@@ -24,6 +24,7 @@ def get_connection():
 if __name__ == "__main__":
     connection = get_connection()
     if connection:
+        connection.connect()
         print("[ INFO ] connection has been created successfully")
     else:
         print("[ ERROR ] please check your DB username and password")
